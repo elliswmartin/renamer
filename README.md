@@ -2,7 +2,7 @@
 Python script to bulk rename files while maintaining user control of names on the file level. 
 
 ## How It Works
-This script uses _____
+This script creates two lists from a csv file stored in the rename folder, one list of the original (current) names and one list of the new names. The script iterates through the old_names list to copy the files into the subfolder, renaming with the new_names list as it does. The original files are deleted after the files are successfully moved.  
 
 ## Usage 
 
