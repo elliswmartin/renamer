@@ -4,7 +4,7 @@ Python script to bulk rename files while maintaining user control of names on th
 ## How It Works
 This script creates two lists from a csv file stored in the rename folder, one list of the original (current) names and one list of the new names. The script iterates through the old_names list to copy the files into the subfolder, renaming with the new_names list as it does. The original files are deleted after the files are successfully moved.  
 
-## Usage 
+## Usage (Mac only)
 
 1. This script ships assuming the following folder structure. You are welcome to modify this for your needs within the /renamer.py script.
 
@@ -19,6 +19,7 @@ This script creates two lists from a csv file stored in the rename folder, one l
 ![CSV Example](csv_example.png)
 
 4. Open Terminal and run the rename script. Images will appear in the "~/Desktop/rename/done" folder when finished.
+        $ py ~/USERNAME/Desktop/rename.py 
 
 ## Background
 I developed this script to handle bulk renaming while at Letterform Archive in San Francisco, CA. 
