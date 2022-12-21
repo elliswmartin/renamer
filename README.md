@@ -14,7 +14,7 @@ This script creates two lists from a csv file stored in the rename folder, one l
 
 2. Add `renamer.py` and your image files to be renamed into the `/Desktop/rename` folder. If you do not have a `done` subfolder, one will be created automatically during processing. 
 
-3. Add file names to a spreadsheet with Column A containing only the original file names (not column title) and Column B similarly containing the new file names. The length of each column must match. Save or download spreadsheet as `rename.csv`. 
+3. Add file names to a spreadsheet with Column A containing only the original file names (not column title) and Column B similarly containing the new file names. The length of each column must match. Save or download spreadsheet as `rename.csv`. Example sheet setup: 
 
 <p align="center">
   <img src="https://github.com/elliswmartin/renamer/blob/main/csv_example.png" />
