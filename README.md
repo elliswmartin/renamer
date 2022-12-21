@@ -16,7 +16,9 @@ This script creates two lists from a csv file stored in the rename folder, one l
 
 3. Add file names to a spreadsheet with Column A containing only the original file names (not column title) and Column B similarly containing the new file names. The length of each column must match. Save or download spreadsheet as `rename.csv`. 
 
-![CSV Example](csv_example.png)
+<p align="center">
+  <img src="https://github.com/elliswmartin/renamer/blob/main/csv_example.png" />
+</p>
 
 4. Open Terminal and run `rename.py`. Images will appear in the `~/Desktop/rename/done` folder when finished.
       
