@@ -18,9 +18,9 @@ This script creates two lists from a csv file stored in the rename folder, one l
 
 ![CSV Example](csv_example.png)
 
-4. Open Terminal and run the rename script. Images will appear in the `~/Desktop/rename/done` folder when finished.
+4. Open Terminal and run `rename.py`. Images will appear in the `~/Desktop/rename/done` folder when finished.
       
-        $ py ~/YOUR_USERNAME/Desktop/rename.py 
+        $ python3 ~/YOUR_USERNAME/Desktop/rename.py 
           
 
 ## Background
