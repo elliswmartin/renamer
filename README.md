@@ -14,16 +14,18 @@ This script creates two lists from a csv file stored in the rename folder, one l
 
 2. Add `renamer.py` and your image files to be renamed into the `/Desktop/rename` folder. If you do not have a `done` subfolder, one will be created automatically during processing. 
 
-3. Add file names to a spreadsheet with Column A containing only the original file names (not column title) and Column B similarly containing the new file names. The length of each column must match. Save or download spreadsheet as `rename.csv`. Example sheet setup: 
+3. Add file names to a spreadsheet with column A containing only the original file names and column B similarly containing the new file names. The length of each column must match; do not include column titles; example sheet setup below. 
 
 <p align="center">
   <img src="https://github.com/elliswmartin/renamer/blob/main/csv_example.png" />
 </p>
 
-4. Open Terminal and run `rename.py`. Images will appear in the `~/Desktop/rename/done` folder when finished.
+4. Save/download spreadsheet as `rename.csv` and place in `rename` folder. 
+
+5. Open Terminal and run `renamer.py`. Images will appear in the `~/Desktop/rename/done` folder when finished.
       
         $ python3 /Users/YOUR_USERNAME/Desktop/rename/renamer.py 
           
 
 ## Background
-I developed this script to handle bulk renaming while at Letterform Archive in San Francisco, CA. 
+I developed this script to handle bulk image file renaming while at Letterform Archive in San Francisco, CA. 
