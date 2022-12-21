@@ -23,23 +23,20 @@ if os.path.exists(nwd) == False:
 for file in old_name:
     index = old_name.index(file)
 
-    # if file has not been renamed 
-    if file != new_name[index]:
-        try:
-            shutil.copy(cwd + file, nwd + new_name[index])
-            print("File copied successfully.")
-        # error: source and destination are same - TODO these don't work rn 
-        except shutil.SameFileError:
-            print("File already exists in destination folder.")
-        # error: any permission issue
-        except PermissionError:
-            print("Permission denied.")
-        # any other errors
-        except:
-            print("Error occurred while copying file.")
-
-        os.chdir(nwd) # move to subdirectory
-        os.chdir(cwd) # return to main directory 
-        os.remove(file) # remove file once renamed and moved 
+    # do not rename if file names are the same 
+    if file == new_name[index]:
+        print(file + " not renamed to " + new_name[index] + "\nOriginal and new filenames are the same.")
+        shutil.move(cwd + file, nwd + file)
+   
+    # do not rename if new filename already exists in subfolder
+    elif new_name[index] in os.listdir(nwd):
+        print(file + " not renamed to " + new_name[index] + ".\nNew filename already exists in 'done' folder")
+    
+    # all clear to rename
     else:
-        print(file + " has already been renamed.")
+        try: 
+            shutil.copy(cwd + file, nwd + new_name[index])
+            print("File renamed successfully.")
+            os.remove(file) # remove file once renamed and moved 
+        except: 
+            print("Error occurred while renaming file.")
