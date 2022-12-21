@@ -20,7 +20,7 @@ This script creates two lists from a csv file stored in the rename folder, one l
 
 4. Open Terminal and run `rename.py`. Images will appear in the `~/Desktop/rename/done` folder when finished.
       
-        $ python3 ~/YOUR_USERNAME/Desktop/rename.py 
+        $ python3 ~/Users/YOUR_USERNAME/Desktop/rename/renamer.py 
           
 
 ## Background
